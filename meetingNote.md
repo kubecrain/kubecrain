@@ -24,6 +24,6 @@
 - 참석자: 조성훈, 신춘호, 정주리, 구본협
 - 아젠다:
 - 주요내용:
-  - Pod, ReplicaSet, Deployment 의 차이?
+  - Pod, ReplicaSet, Deployment 의 차이?!
   - Label? Namespace? 얘들은 다른 오브젝트를 어떻게 찾아낼까???
   - 서비스는 왜 있을까?
