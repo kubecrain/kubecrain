@@ -1,0 +1,22 @@
+application:
+  # 대표 도메인
+  representation-domain: test.com
+
+## Logging 설정
+logging:
+  path: "/tmp/test/logs"
+  file:
+    max-size: 30MB
+    max-history: 10 #10일 후 로그 파일 삭제
+  pattern:
+    console: '%d{MM/dd HH:mm:ss.SSS} [%t] [%clr(%-5p)] %clr(%logger.%M\(%line\)){cyan} - %msg %n'
+    file: '%d{MM/dd HH:mm:ss.SSS} [%t] [%clr(%-5p)] %clr(%logger.%M\(%line\)){cyan} - %msg %n'
+  level:
+    root: info
+    jdbc: error
+    com.megazone:
+      devops: debug
+      devops.common:
+        security: info
+        jpa: info
+        

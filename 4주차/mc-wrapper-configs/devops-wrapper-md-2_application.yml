@@ -1,0 +1,26 @@
+application:
+  name: devops-wrapper-md
+  code: MW2
+
+## Logging 설정
+logging:
+  path: /tmp/wrapper-md2/log
+    
+spring:
+  datasource:
+    url: "jdbc:mariadb://test.db.com:3306/WRAPPER?useSSL=false&autoReconnect=true&characterEncoding=utf8&useUnicode=yes"
+    username: testuser
+    password: testpassword
+    
+mz:
+  wrapper:
+    permit-all-pages:
+    - "/swagger**/**"
+    - "/v2/api-docs/**"
+    - "/webjars/**"
+    api:
+      apis:
+        users: "/users"
+        groups: "/api/users/groups"
+        comments: "/comment/api"
+        notifications: "/notifications"
